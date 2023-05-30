@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Hydro Ideas {% endblock %}
+
+{% block page_header %}
+<header class="max-w-3xl">
+    <h1 class="block text-2xl font-bold text-gray-800 sm:text-3xl dark:text-white">
+    Flask Turbo Demo
+    </h1>
+    <p class="mt-2 text-lg text-gray-800 dark:text-gray-400">
+        On a non Linux system fake "CPU Load" is shown, on Linux the CPU load is retrieved using a call to a system program.
+    </p>
+</header>
+{% endblock %}
+
+
+{% block content %}
+
+        {% include "loadavg.html" %}
+
+{% endblock %}
